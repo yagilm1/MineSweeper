@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,40 @@
     <link rel="stylesheet" href="/css/main.css">
     <title>Mine sweeper</title>
 </head>
+
 <body onload="init()">
-    
-    <h1>Project in progress...</h1>
 
-    <div>
-         <table border="1" cellpadding = "10">
-            <tbody class="board" ></tbody>
-        
+    <h1>Mine sweeper</h1>
 
 
-    </table>
+    <div class="bestTime">🔸🔸</div>
+    <button onclick="restartGame()" class="user">😀</button>
+    <div class="timeCount">0</div>
+
+    <div class="game">
+
+        <table border="1" cellpadding="10">
+            <tbody class="board"></tbody>
+
+
+
+        </table>
+
+        <div>
+            <button class="lives" >lives: 3 </button>
+        </div>
 
     </div>
-    
-    <div onmousedown="test()">tedst</div>
+    <div>
+        <button class="level" onclick="setEasyLevel()">Easy</button>
+        <button class="level" onclick="setMediumLevel()">Medium</button>
+        <button class="level" onclick="setHardLevel()">Hard</button>
+    </div>
+ 
+
 
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
